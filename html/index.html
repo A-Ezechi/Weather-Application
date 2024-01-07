@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+
+            <div class="search-bar">
+                <form action="get">
+                    <input type="text" name="search-location" class="search-location" id="search-location" placeholder="Please Enter Location" required>
+                </form>
+
+                <button class="search-button" id="search-button">🔍</button>
+            </div>
+
+            <div class="weather-icon">
+                <figure>
+                    <p id="weather">☀️</p>
+                </figure>
+            </div>
+
+            <div class="temperature">
+                <h2 id="variable-temperature" class="variable-temperature">Test</h2>
+            </div>
+
+            <div class="location">
+                <h1 id="variable-location" class="variable-location">Test</h1>
+            </div>
+
+            <div class="humidity-wind">
+                <div class="humidity">
+                    <div class="humidity-icon"><p>༄</p></div>
+                    <div class="hpercentage"><p id="humidity-percentage">TEST</p></div>
+                    <div class="humidity-text"><p>Humidity</p></div>
+                </div>
+
+                <div class="wind">
+                    <p class="wind-icon">🌪️</p>
+                    <p id="wind-speed">TEST</p>
+                    <p class="wind-text">Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/javascript.js"></script>
+</html>
