@@ -1,21 +1,19 @@
 // VARIABLES
 
+const apiKey = '6a663b61cf89f60f777e35f1b14a35b3';
+const limit = 1;
 const searchButton = document.getElementById('search-button');
 
-// API CALL
-
-const apiKey = 'd9529baba1204da0876210250240901'
-
-let weather = fetch('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=d9529baba1204da0876210250240901')
-
-console.log(weather)
 
 // SEARCH BUTTON CLICK
 
-searchButton.addEventListener('click', () => {
+searchButton.addEventListener('click', async() => {
 
+    const inputResult = input.value
     const input = document.querySelector('.search-location');
-    const inputResult = input.value;
+    const data = fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${inputResult}&limit=${limit}&appid=${apiKey}`);
+    
+    
     
     console.log(inputResult);
 
@@ -24,7 +22,6 @@ searchButton.addEventListener('click', () => {
 document.querySelector('.variable-location').innerHTML = input.value;
 
 // GETTING WEATHER
-
 
 
 })
